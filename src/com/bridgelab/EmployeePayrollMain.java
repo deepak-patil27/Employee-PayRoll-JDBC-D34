@@ -11,6 +11,8 @@ public class EmployeePayrollMain {
 		employeePayrollService.updateSalary("Terisa", 3000000);
 		System.out.println("\n-----Particular Salary Data Range-----");
 		EmployeePayrollDBService.retrieveAllDataUsingPreparedStatemnt();
+		System.out.println("\n-----Database Function For analysis By Gender-----");
+		employeePayrollService.getSumOfSalaryByMaleAndFemale();
 	}
 
 }
