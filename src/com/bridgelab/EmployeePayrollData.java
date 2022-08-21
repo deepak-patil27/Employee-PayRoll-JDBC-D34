@@ -1,8 +1,10 @@
 package com.bridgelab;
 
 import java.sql.Date;
+import java.time.LocalDate;
 
 public class EmployeePayrollData {
+	
 	private int id;
     private String name;
     private String gender;
@@ -17,7 +19,11 @@ public class EmployeePayrollData {
         this.start_date = start_date;
     }
 
-    @Override
+    public EmployeePayrollData(int employeeId, String name2, double salary2, LocalDate startDate) {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
     public String toString() {
         return "EmployeePayrollData{" +
                 "id=" + id +

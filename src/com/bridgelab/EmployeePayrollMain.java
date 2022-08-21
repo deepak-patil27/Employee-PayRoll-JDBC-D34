@@ -13,6 +13,8 @@ public class EmployeePayrollMain {
 		EmployeePayrollDBService.retrieveAllDataUsingPreparedStatemnt();
 		System.out.println("\n-----Database Function For analysis By Gender-----");
 		employeePayrollService.getSumOfSalaryByMaleAndFemale();
+		System.out.println("\n-----Add New Employee-----");
+		employeePayrollService.addEmployee();
 	}
 
 }
